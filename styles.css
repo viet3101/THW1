@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Nền trắng */
+    color: #000; /* Chữ đen */
+}
+.container {
+    background-color: #FF0000; /* Nền đỏ */
+    color: #fff; /* Chữ trắng */
+    padding: 10px;
+    text-align: center;
+    max-width: 100%; /* Mở rộng container tối đa */
+    margin: 0 auto; /* Canh giữa container */
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Canh giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Canh các phần tử theo chiều ngang */
+}
+.logo img {
+    background-color: #fff; /* Nền trắng cho hình ảnh */
+    padding: 5px; /* Tăng khoảng cách giữa hình ảnh và nền đỏ */
+    border-radius: 5px; /* Bo tròn góc cho hình ảnh */
+}
+.logo {
+    flex-shrink: 0; /* Không cho phần logo co lại */
+}
+.content {
+    flex-grow: 1; /* Phần còn lại sẽ chiếm toàn bộ khoảng trống */
+}
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-container input[type="text"],
+.form-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.form-container input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.title {
+    text-align: center;
+}
